@@ -14,6 +14,7 @@
   height: 40vmin;
   pointer-events: none;
   animation: App-logo-spin infinite var(--logo-animation-duration) linear;
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -44,4 +45,10 @@
 
 .App-link {
   color: var(--secondary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: #8be9fd;
 }
