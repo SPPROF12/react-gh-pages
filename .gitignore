@@ -1,29 +1,8 @@
-# dependencies
+# Dependencies
 /node_modules
 /.pnp
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-yarn.lock
-package-lock.json
+yarn.lock # if you are using Yarn, otherwise use package-lock.json
 
-# testing
-/coverage
-
-# production
+# Build artifacts
 /build
 
-# misc
-.DS_Store
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.idea
-thumbs.db
-
-# editor files
-.vscode
-.eslintrc.json
-.prettierrc
