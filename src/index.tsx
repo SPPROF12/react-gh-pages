@@ -4,20 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Attempt to render the App component, and log any errors to the console
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-  (error) => {
-    if (error) {
-      console.error('Error rendering the App component:', error);
-    }
-  }
-);
+const rootElement = document.getElementById('root');
 
-// If reportWebVitals is defined, log performance metrics
+try {
+  ReactDOM.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement
+  );
+} catch (error) {
+  console.error('Error rendering the App component:', error);
+}
+
 if (reportWebVitals) {
   reportWebVitals();
 }
